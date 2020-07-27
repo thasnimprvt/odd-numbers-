@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><title>odd numbers</title></head>
+ <body>
+ <h2>ODD NUMBERS </h2>
+ <p id="demo"></p>
+ <button onclick="myFunction1()">while</button>
+ <button onclick="myFunction2()">do...while</button>
+ <button onclick="myFunction3()">for</button>
+ <script>
+ function myFunction1()
+ {
+ 	var i=1;
+ 	var txt="";
+ 	while(i<100)
+ 	{
+ 		if(i%2==1)
+ 		{
+ 			txt=txt+i+"<br>";
+ 		}
+ 		i++
+ 	}
+ 	document.getElementById('demo').innerHTML=txt;
+ }
+ function myFunction2()
+ {
+ 	var i=1;
+ 	var txt="";
+ 	do{
+ 		if(i%2==1)
+ 		{
+ 			txt=txt+i+"<br>";
+ 		}
+ 		i++
+ 	}while(i<100);
+ document.getElementById('demo').innerHTML=txt;}
+ function myFunction3()
+ {
+ 	var i=1;
+ 	var txt="";
+ 	for(i=1,txt="";i<100;i++)
+ 	{
+ 		if(i%2==1)
+ 		{
+ 			txt=txt+1+"<br>";
+ 		}
+ 	}
+ 	document.getElementById('demo').innerHTML=txt;
+ }
+  </script>
+   </body>
+</html>
